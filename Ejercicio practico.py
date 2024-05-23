@@ -19,8 +19,16 @@ print(suma_total(1,1,1))
 nombre = 'Enrique'
 lista_nombre = ['Jessica', 'Paul', 'George', 'Henry', 'Adán']
 
+# Opcion 1: utulizar if-else y comparar directamente
+if nombre in lista_nombre:
+    print("El nombre está en la lista")
+else:
+    print("El nombre está en la lista")
+
+# Opcion 2: utilizar for-else y comparar los nombres uno a uno
 for nomb in lista_nombre :
     if nombre == nomb :
         print(f"El nombre {nomb} aparece en la lista")
-    else:
-        print(f'El nombre no es {nomb}')
+        break
+else:
+    print(f'El nombre {nomb} no está en la lista')
